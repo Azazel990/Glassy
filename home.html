@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+    <script src="js/bootstrap.js"></script>
+	<script src="js/jquery.js"></script>
+    <title>Glassy</title>
+    <style>
+        body
+        {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .shape1
+        {
+            margin: 0;
+            padding: 0;
+            position:absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: #FFA90A;
+            clip-path: polygon(0 0, 50% 0, 26% 100%, 0% 100%);
+
+        }
+        .section1
+        {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            height: 80%;
+            width: 80%;
+            left: 10%;
+            top: 10%;
+        }
+
+        .bgr1
+        {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background: rgba(255,255,255,0.2);
+            border-left: 1px solid rgba(255,255,255,0.1);
+            border-top: 1px solid rgba(255,255,255,0.1);
+            backdrop-filter: blur(5px);
+            box-sizing: border-box;
+            box-shadow: 20px 20px 40px rgba(0,0,0,0.5);
+        }
+        .section1 .bgr1 h2
+        {
+            position: absolute;
+            font-size: 6em;
+            color: #000;
+            left: 7%;
+            top: 10%;
+            z-index: 2;
+            font-family: 'Great Vibes', cursive;
+            letter-spacing: 4px;
+            
+        }
+        .section1 .bgr1 h3
+        {
+            position: absolute;
+            font-family: Montserrat;
+            z-index: 2;
+            font-size: 1.8em;
+            top: 42.5%;
+            left: 7%;
+
+        }
+        .section1 .bgr1 img
+        {
+            position: relative;
+            left: 60%;
+        }
+       .section1 .bgr1 .info
+       {
+           position: relative;
+           height: 200px;
+           width: 50%;
+           left: 7%;
+           top: 55%;
+           font-weight: bold;
+           word-wrap: break-word;
+            font-family: lato;
+            overflow: hidden;
+       }
+      .info p
+       {
+            line-height: 1.5em;
+       }
+       .sample
+       {
+           position: relative;
+           height: 450px;
+           width: 300px;
+            /* border: 2px solid red; */
+           left: 15%;
+           top: 10%;
+           animation: slides 10s;
+           animation-iteration-count: infinite;
+           background-size: cover;
+          background-repeat: no-repeat;
+       }
+       @keyframes slides 
+       {
+           0%
+           {
+                background: url('pics/glass-of-wine-1973136_1920-removebg-preview.png');
+           }
+           20%
+           {
+               background: url('pics/glass-of-wine-1973136_1920-removebg-preview.png');
+           }
+           20.01%
+           {
+               background: url('pics/two.png');
+           }
+           40%
+           {
+               background: url('pics/two.png');
+           }
+           40.01%
+           {
+               background: url('pics/glass-3077869_1280-removebg-preview.png');
+           }
+           60%
+           {
+            background: url('pics/glass-3077869_1280-removebg-preview.png');               
+           }
+           60.01%
+           {
+               background: url('pics/champagne-1814988_1920-removebg-preview.png');
+           }
+           80%
+           {
+            background: url('pics/champagne-1814988_1920-removebg-preview.png');
+           }
+           80.01%
+           {
+               background: url('pics/champagne-160867_1280-removebg-preview.png');
+           }
+           100%
+           {
+            background: url('pics/champagne-160867_1280-removebg-preview.png');
+           }
+       }
+       .shape2
+        {
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            height: 65%;
+            width: 100%;
+            background: #FFA90A;
+            clip-path: polygon(0 0, 26% 0, 10% 100%, 0 100%);
+
+
+        }
+        .section2
+        {
+            margin: 0;
+            padding: 0;
+            height: 60%;
+            width: 80%;
+            position: absolute;
+            left: 10%;
+            top: 100%;
+            background: rgba(255,255,255,0.2);
+            border-left: 1px solid rgba(255,255,255,0.1);
+            border-top: 1px solid rgba(255,255,255,0.1);
+            backdrop-filter: blur(5px);
+            box-sizing: border-box;
+            box-shadow: 20px 20px 40px rgba(0,0,0,0.5);
+            overflow: hidden;
+        }
+        .section2 .info2
+        {
+            margin: 0;
+            padding: 0;
+            position: relative;
+            left: 45%;
+            top: -45%;
+            height: 100%;
+            width: 50%;
+            overflow: hidden;
+        }
+        .section2 h2
+        {
+         position: relative;
+            font-family: Montserrat;
+            font-size: 2.5em;
+            letter-spacing: 4px;
+        }
+        .section2 p
+        {
+            font-weight: bold;
+            font-family: lato;
+            font-family: lato;
+            line-height: 1.4em;
+            overflow: hidden;
+        }
+        .section2 .logo
+        {
+            position: relative;
+          
+            height: 200px;
+            width: 30%;
+            top: 25%;
+            left: 7%;
+        }
+        .section2 .logo img
+        {
+            position: relative;
+           padding: 15%;
+        }
+        
+        
+
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+
+          
+  .slideanim1 {visibility:hidden;}
+  .slide1 {
+    animation-name: slide1;
+    -webkit-animation-name: slide1;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+   
+  }
+
+  @keyframes slide1 {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+      animation-delay: 1s;
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide1 {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  .section3
+        {
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            left: 0;
+            top: 165%;
+            height: 100%;
+            width: 100%;
+            background: #FFA90A;
+           
+         }
+         .section3 h2
+         {
+             text-align: center;
+             font-family: Montserrat;
+             font-size: 3em;
+             letter-spacing: 4px;
+
+         }
+         .container
+         {
+             position: relative;
+             height: 80%;
+             width: 80%;
+             border: 2px solid Black;
+             left: 10%;
+         }
+    </style>
+
+    <script>
+        //scroll
+
+
+		$(document).ready(function(){
+		 $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+});
+
+$(document).ready(function(){
+		 $(window).scroll(function() {
+    $(".slideanim1").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide1");
+        }
+    });
+  });
+});
+    </script>    
+
+</head>
+<body>
+        <div class="shape1"></div>
+        
+        <div class="section1">
+            <div class="bgr1">
+               
+              
+
+                <h2>Glassy</h2>
+                <h3>Every glass has a story</h3>
+                <div class="info">
+                    <p>Glassy is a Danish multinational brewer. Founded in 1847 by J. C. Jacobsen, the company's headquarters is located in Copenhagen, Denmark. Since Jacobsen's death in 1887, the majority owner of the company has been the Glassy Foundation. The company's flagship brand is Glassy (named after Jacobsen's son Carl). Other brands include Tuborg, Kronenbourg, Somersby cider, Neptun, Russia's best-selling beer Baltika, Belgian Grimbergen, and more than 500 local beers.
+
+                </div>
+
+                </p>
+                <div class="sample"></div>
+            </div>
+            
+           
+        </div>
+        <div class="shape2"></div>
+      <div class="section2 slideanim">
+        <div class="logo slideanim1">
+            <img src="pics/logo.png" alt="">
+        </div>
+            <div class="info2 slideanim1">
+                    <h2>About Us</h2>
+                        <p>Carlsberg is the flagship beer brand in Carlsberg Group's portfolio of 155 brands. It is a 5% abv pilsner beer (3.8% in the UK and branded as Carlsberg Danish Pilsner[citation needed]) with a global distribution to 140 markets. It is also known as Carlsberg Lager, Carlsberg Beer and Carlsberg Pilsner. It was first brewed in 1904,and was created by Carl Jacobsen, son of Carlsberg's founder JC Jacobsen.</p>
+
+                        <p>  The introduction of the Carlsberg pilsner also saw the reintroduction of the Art Nouveau-style logo that has been used nearly unmodified since 1904, and later became the logo of the entire company. It was designed by Thorvald Bindesbøll.</p>
+                </div>
+            
+      </div>
+
+      
+
+      <div class="section3">
+            <h2 class="slideanim">Our Products</h2>
+
+            <div class="container slideanim">
+                
+                <div class="box">
+                    <div class="layer"></div>
+                    <div class="info">
+
+                    </div>
+                </div>
+            </div>
+
+            
+      </div>
+</body>
+</html>
